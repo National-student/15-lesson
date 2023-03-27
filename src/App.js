@@ -1,10 +1,19 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Users } from './Components/Users';
+import { Header } from './Components';
+import { Home, Users, UserSingle } from './Pages';
 
 function App() {
+
   return (
     <>
-    <Users />
+    <Header />
+    <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/users' element={<Users />}/>
+      <Route path='/users/:userId' element={<UserSingle />}/>
+    </Routes>
     </>
   );
 }

@@ -1,0 +1,15 @@
+.list {
+    list-style-type: none;
+    display: flex;
+}
+
+.link {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.active--link {
+    color: rgb(64, 3, 46);
+    border-bottom: 2px solid rgb(64, 3, 46);
+    padding-bottom: 5px;
+}
